@@ -1,0 +1,46 @@
+body{
+    height:100%;
+}
+html{
+    height: 100%;
+}
+
+.nav-item {
+    font-size : 1.5em;
+    padding-left: 1.5em;
+    font-weight: 400;
+    
+}
+
+.navbar-brand {
+    font-size: 1.8em;
+    letter-spacing: 0.2em;
+    font-weight: 700;
+    font-variant: small-caps;
+}
+
+#georadar {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    padding-top: 40vh;
+    background-image: url(../../images/together.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    color: #fff;
+    text-shadow: black 0.1em 0.1em 0.2em ;
+  }
+
+  .featurette-divider {
+      margin: 5rem;
+  }
+
+.nav-link {
+    padding-bottom: 0.5em;
+}
+
+.card {
+    padding:0.5em;
+}
+
