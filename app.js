@@ -73,6 +73,6 @@ app.post("/georadar", function(req, res) {
     });
 });
 
-app.listen(8080, function(){
+app.listen(8080, "localhost", function(){
     console.log("server has started");
 });
