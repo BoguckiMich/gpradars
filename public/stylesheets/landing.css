@@ -50,19 +50,19 @@ body {
   }
   .slideshow li:nth-child(2) { 
     background-image: url(../../images/bckg5.png);
-    animation-delay: 4s; 
+    animation-delay: 3s; 
   }
   .slideshow li:nth-child(3) { 
     background-image: url(../../images/bckg3.png);
-    animation-delay: 8s; 
+    animation-delay: 6s; 
   }
   .slideshow li:nth-child(4) { 
     background-image: url(../../images/bckg2.jpeg);
-    animation-delay: 12s; 
+    animation-delay: 9s; 
   }
   .slideshow li:nth-child(5) { 
     background-image: url(../../images/bckg1.png);
-    animation-delay: 16s; 
+    animation-delay: 12s; 
   }
 
   @keyframes imageAnimation { 

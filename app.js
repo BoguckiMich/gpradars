@@ -1,12 +1,27 @@
 var express = require("express");
 var app = express();
+var path = require('path');
 var bodyParser = require("body-parser");
+var cookieParser = require("cookie-parser");
 var nodemailer = require("nodemailer");
+var i18n = require("i18n-express");
+var session = require("express-session")
 
 // app.use(express.bodyParser());
 app.use(bodyParser.urlencoded({extended:false}));
 app.set("view engine", "ejs");
 app.use(express.static("public"));
+app.use(session({
+    secret: 'secret',
+    saveUninitialized: true,
+    resave: true
+  }));
+
+app.use(i18n({
+    translationsPath: path.join(__dirname, 'i18n'), // <--- use here. Specify translations files path.
+    siteLangs: ["en","pl"],
+    textsVarName: 'translation'
+  }));
 
 app.get("/", function(req, res){
     res.render("landing");

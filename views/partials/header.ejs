@@ -21,17 +21,21 @@
                           <li class="nav-item">
                         </li>
                       </ul>
-                        <ul class="navbar-nav">
+                        <ul class="navbar-nav mr-3" >
                               <li class="nav-item"><a class="nav-link" href="/georadar"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-                              <li class="nav-item"><a class="nav-link" href="/georadar/offer">Oferta</a></li>
-                              <li class="nav-item"><a class="nav-link" href="/georadar/eq">Sprzet</a></li>
+                              <li class="nav-item"><a class="nav-link" href="/georadar/offer"><%=translation.navOffer%></a></li>
+                              <li class="nav-item"><a class="nav-link" href="/georadar/eq"><%=translation.navEq%></a></li>
                               <!-- <li class="nav-item"><a class="nav-link" href="/georadar/about">O nas</a></li> -->
-                              <li class="nav-item"><a class="nav-link" href="/georadar/news">Aktualności</a></li>
+                              <li class="nav-item"><a class="nav-link" href="/georadar/news"><%=translation.navWorks%></a></li>
                               <li class="nav-item">
                                 <div>
-                                 <a class="nav-link btn btn-outline-info" style="font-size: 20px;" href="/georadar/contact">Napisz do nas!!!</a>
+                                 <a class="nav-link btn btn-outline-info" style="font-size: 20px;" href="/georadar/contact"><%=translation.navContact%></a>
                                 </div>
                               </li>
+                        </ul>
+                        <ul class="list-group p-0">
+                          <li class="list-group-item p-0"><a class="nav-link <%=(lang=="pl"?"active":"")%>" href="?clang=pl">Polski</a></li>
+                          <li class="list-group-item p-0"><a class="nav-link <%=(lang=="en"?"active":"")%>" href="?clang=en">English</a></li>
                         </ul>
                     </div>
                   </nav>
